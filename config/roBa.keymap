@@ -41,19 +41,14 @@
             key-positions = <24 25>;
         };
 
-        Enter {
-            bindings = <&kp ENTER>;
-            key-positions = <37 30>;
+        rigtht_click {
+            bindings = <&mkp LCLK>;
+            key-positions = <19 20>;
         };
 
-        up_arrow {
-            bindings = <&kp UP_ARROW>;
-            key-positions = <37 9>;
-        };
-
-        down_arrow {
-            bindings = <&kp DOWN>;
-            key-positions = <37 29>;
+        left_click {
+            bindings = <&mkp RCLK>;
+            key-positions = <18 19>;
         };
     };
 
