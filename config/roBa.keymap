@@ -89,7 +89,7 @@
             bindings = <
 &kp Q             &kp W         &kp E    &kp R                    &kp T                                                &kp Y        &kp U  &lt 4 I    &kp O    &kp P
 &kp A             &kp S         &kp D    &kp F                    &kp G        &kp LS(LG(S))         &kp MINUS         &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C    &kp V                    &kp B        &mkp LCLK             &lt 2 SEMICOLON   &kp N        &kp M  &kp COMMA  &kp DOT  &mt RSHIFT SLASH
+&mt LEFT_SHIFT Z  &kp X         &kp C    &kp V                    &kp B        &mkp LCLK             &kp SEMICOLON     &kp N        &kp M  &kp COMMA  &kp DOT  &mt RSHIFT SLASH
 &kp LEFT_COMMAND  &kp LEFT_ALT  &kp TAB  &mt LEFT_CONTROL ESCAPE  &lt 1 SPACE  &lt 5 LANGUAGE_2      &lt 3 LANGUAGE_1  &lt 3 LANG1                             &kp NON_US_BACKSLASH
             >;
 
