@@ -143,5 +143,15 @@
 
             sensor-bindings = <&encoder_msc_down_up>;
         };
+        MOUSE {
+            bindings = <
+&mkp LCLK   &mkp MCLK   &mkp RCLK   &no     &no
+&mkp MS_LEFT &mkp MS_UP   &mkp MS_DOWN &mkp MS_RIGHT &no
+&mkp WH_LEFT &mkp WH_UP   &mkp WH_DOWN &mkp WH_RIGHT &no
+&no          &no          &no          &no           &no
+            >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
+        };
     };
 };
