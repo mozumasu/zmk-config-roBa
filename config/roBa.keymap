@@ -145,10 +145,10 @@
         };
         MOUSE {
             bindings = <
-&mkp LCLK    &trans         &mkp RCLK     &trans   &trans
-&mkp MS_LEFT &mkp MS_UP    &mkp MS_DOWN  &mkp MS_RIGHT  &trans
-&mkp WH_LEFT &mkp WH_UP    &mkp WH_DOWN  &mkp WH_RIGHT  &trans
-&trans       &trans        &trans        &trans         &trans
+ &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+ &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+ &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
           >;
 
             sensor-bindings = <&encoder_msc_down_up>;
