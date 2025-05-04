@@ -85,9 +85,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-        // 日本語配列レイヤーだけ keymap_jp.h を include
-        #include "keymap_jp.h"
-
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E    &kp R                    &kp T                                                 &kp Y        &kp U  &lt 4 I    &kp O    &kp P
