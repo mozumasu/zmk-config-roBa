@@ -15,16 +15,9 @@
 };
 
 / {
-    my_mouse_temp_layer: my_mouse_temp_layer {
-        compatible = "zmk,input-processor-temp-layer";
-        #input-processor-cells = <2>;
-        require-prior-idle-ms = <1000>;  // 直前に500msキー操作なければ有効
-    };
-
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&my_mouse_temp_layer 6 2000>;  // layer 6 に 2秒間切替
     };
 };
 
