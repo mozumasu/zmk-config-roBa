@@ -1,39 +1,46 @@
-#define JP_ZKHK  GRAVE        // Zenkaku ↔ Hankaku ↔ Kanji (半角 ↔ 全角 ↔ 漢字)
-#define JP_MINUS MINUS        // -
-#define JP_CARET EQUAL        // ^
-#define JP_YEN   INT3         // ¥
-#define JP_AT    LBKT         // @
-#define JP_LBKT  RBKT         // [
-#define JP_EISU  CAPS         // Eisū (英数)
-#define JP_SEMI  SEMI         // ;
-#define JP_COLON SQT          // :
-#define JP_RBKT  NUHS         // ]
-#define JP_COMMA COMMA        // ,
-#define JP_DOT   DOT          // .
-#define JP_SLASH SLASH        // /
-#define JP_BSLH  INT1         // (backslash)
-#define JP_MHEN  INT5         // Muhenkan (無変換)
-#define JP_HENK  INT4         // Henkan (変換)
-#define JP_KANA  INT2         // Katakana ↔ Hiragana ↔ Rōmaji (カタカナ ↔ ひらがな ↔ ローマ字)
-#define JP_EXCL  LS(N1)       // !
-#define JP_DQT   LS(N2)       // "
-#define JP_HASH  LS(N3)       // #
-#define JP_DLLR  LS(N4)       // $
-#define JP_PRCNT LS(N5)       // %
-#define JP_AMPS  LS(N6)       // &
-#define JP_SQT   LS(N7)       // '
-#define JP_LPAR  LS(N8)       // (
-#define JP_RPAR  LS(N9)       // )
-#define JP_EQUAL LS(JP_MINUS) // =
-#define JP_TILDE LS(JP_CARET) // ~
-#define JP_PIPE  LS(JP_YEN)   // |
-#define JP_GRAVE LS(JP_AT)    // `
-#define JP_LBRC  LS(JP_LBKT)  // {
-#define JP_CAPS  LS(JP_EISU)  // Caps Lock
-#define JP_PLUS  LS(JP_SEMI)  // +
-#define JP_ASTRK LS(JP_COLON) // *
-#define JP_RBRC  LS(JP_RBKT)  // }
-#define JP_LT    LS(JP_COMMA) // <
-#define JP_RT    LS(JP_DOT)   // >
-#define JP_QMARK LS(JP_SLASH) // ?
-#define JP_UNDER LS(JP_BSLH)  // _
+// JIS配列に対応するZMK標準キーコード定義
+// Keymap Editor上で直接使える形式
+// 直接入力キー
+#define ZKHK   GRAVE       // 半角/全角
+#define MINUS  MINUS       // -
+#define CARET  EQUAL       // ^
+#define YEN    INT3        // ¥
+#define AT     LBKT        // @
+#define LBKT   RBKT        // [
+#define SEMI   SEMI        // ;
+#define COLON  SQT         // :
+#define RBKT   BSLH        // ]
+#define COMMA  COMMA       // ,
+#define DOT    DOT         // .
+#define SLASH  SLASH       // /
+#define BSLH   INT1        // \ (ろキー)
+
+// IME切替関連
+#define MHEN   INT5        // 無変換
+#define HENK   INT4        // 変換
+#define KANA   LANG1       // かな
+#define EISU   LANG2       // 英数
+
+// 記号（Shift併用）
+#define EXCL   LS(N1)      // !
+#define DQT    LS(N2)      // "
+#define HASH   LS(N3)      // #
+#define DLLR   LS(N4)      // $
+#define PRCNT  LS(N5)      // %
+#define AMPS   LS(N6)      // &
+#define SQT    LS(N7)      // '
+#define LPAR   LS(N8)      // (
+#define RPAR   LS(N9)      // )
+#define EQUAL  LS(MINUS)   // =
+#define TILDE  LS(CARET)   // ~
+#define PIPE   PIPE2       // |
+#define GRAVE  LS(AT)      // `
+#define LBRC   LS(LBKT)    // {
+#define CAPS   LS(CAPS)    // Caps Lock
+#define PLUS   LS(SEMI)    // +
+#define ASTRK  LS(COLON)   // *
+#define RBRC   LS(RBKT)    // }
+#define LT     LS(COMMA)   // <
+#define RT     LS(DOT)     // >
+#define QMARK  LS(SLASH)   // ?
+#define UNDER  LS(BSLH)    // _
