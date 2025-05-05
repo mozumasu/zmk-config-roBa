@@ -2,7 +2,7 @@
 // Keymap Editor上で直接使える形式
 // 直接入力キー
 #define ZKHK   GRAVE       // 半角/全角
-#define MINUS  MINUS       // -
+/*#define MINUS  MINUS       // -*/
 #define CARET  EQUAL       // ^
 #define YEN    INT3        // ¥
 #define AT     LBKT        // @
