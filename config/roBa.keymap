@@ -85,9 +85,9 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E    &kp R                    &kp T                                                 &kp Y        &kp U  &lt 4 I       &kp O       &kp P
-&kp A             &kp S         &kp D    &kp F                    &kp G        &kp LS(LG(S))         &kp MINUS          &kp H        &kp J  &kp K         &kp L       &kp JP_COLON
-&mt LEFT_SHIFT Z  &kp X         &kp C    &kp V                    &kp B        &mkp LCLK             &lt 2 JP_SEMI      &kp N        &kp M  &kp JP_COMMA  &kp JP_DOT  &mt RIGHT_SHIFT JP_DQT
-&kp LEFT_COMMAND  &kp LEFT_ALT  &kp TAB  &mt LEFT_CONTROL ESCAPE  &lt 1 SPACE  &lt 5 JP_EISU         &kp RIGHT_COMMAND  &lt 3 JP_KANA                                 &sk N7
+&kp A             &kp S         &kp D    &kp F                    &kp G        &kp LS(LG(S))         &kp JP_MINUS       &kp H        &kp J  &kp K         &kp L       &kp JP_COLON
+&mt LEFT_SHIFT Z  &kp X         &kp C    &kp V                    &kp B        &mkp LCLK             &lt 2 JP_SEMI      &kp N        &kp M  &kp JP_COMMA  &kp JP_DOT  &mt RSHIFT JP_DQT
+&kp LEFT_COMMAND  &kp LEFT_ALT  &kp TAB  &mt LEFT_CONTROL ESCAPE  &lt 1 SPACE  &lt 5 JP_EISU         &kp RIGHT_COMMAND  &lt 3 JP_KANA                                 &kp JP_SQT
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -95,10 +95,10 @@
 
         NUM {
             bindings = <
-&kp MINUS                     &kp N7        &kp N8        &kp N9        &kp JP_PLUS                                              &kp JP_CARET  &kp JP_AMPS      &kp JP_TILDE       &kp JP_LPAR  &kp JP_RPAR
-&kp JP_SLASH                  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp JP_ASTRK  &kp LC(LA(KP_NUMBER_0))      &kp JP_UNDER  &kp JP_EXCL   &kp JP_AT        &kp JP_HASH        &kp JP_DLLR  &kp JP_PRCNT
-&mt LEFT_SHIFT KP_NUMBER_0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp &trans                   &kp JP_GRAVE  &kp JP_LBKT   &kp JP_RBKT      &kp JP_LBRC        &kp JP_RBRC  &kp JP_BSLH
-&trans                        &trans        &trans        &trans        &trans        &trans                       &trans        &trans                                                         &kp JP_PIPE
+&kp JP_MINUS                  &kp N7        &kp N8        &kp N9        &kp JP_PLUS                                              &kp JP_CARET         &kp JP_AMPS      &kp JP_TILDE       &kp JP_LPAR  &kp JP_RPAR
+&kp JP_SLASH                  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp JP_ASTRK  &kp LC(LA(KP_NUMBER_0))      &kp JP_UNDER  &kp JP_EXCL          &kp JP_AT        &kp JP_HASH        &kp JP_DLLR  &kp JP_PRCNT
+&mt LEFT_SHIFT KP_NUMBER_0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp JP_EQUAL                 &kp JP_GRAVE  &kp JP_LBKT          &kp JP_RBKT      &kp JP_LBRC        &kp JP_RBRC  &kp JP_BSLH
+&trans                        &trans        &trans        &trans        &trans        &trans                       &trans        &trans                                              &kp JP_PIPE
             >;
         };
 
@@ -141,10 +141,10 @@
         };
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+ &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+ &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+ &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
           >;
 
             sensor-bindings = <&encoder_msc_down_up>;
