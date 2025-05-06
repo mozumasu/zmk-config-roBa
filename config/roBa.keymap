@@ -62,7 +62,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_BT4";
             #binding-cells = <2>;
-            bindings = <&mo 4 &kp JP_SQT>;
+            bindings = <MO(4) &kp JP_SQT>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
