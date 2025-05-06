@@ -61,10 +61,11 @@
         lt_bt4: lt_bt4 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_BT4";
-            bindings = <&mo 4 &kp JP_SQT>;
+            #binding-cells = <2>;
+            bindings = <&mo 4>, <&kp JP_SQT>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-      };
+        };
     };
 
     keymap {
