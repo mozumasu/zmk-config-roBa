@@ -58,11 +58,18 @@
             tap-ms = <20>;
         };
 
+        mo_4: mo_4 {
+            compatible = "zmk,behavior-momentary-layer";
+            label = "MO_4";
+            #binding-cells = <0>;
+            layer = <4>;
+        };
+
         lt_bt4: lt_bt4 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_BT4";
             #binding-cells = <2>;
-            bindings = <MO(4) &kp JP_SQT>;
+            bindings = <&mo_4 &kp JP_SQT>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
