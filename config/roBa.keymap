@@ -19,26 +19,6 @@
         compatible = "zmk,combos";
         timeout-ms = <20>; // default is 30ms
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        double_quotation {
-            bindings = <&kp JP_DQT>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
-
         rigtht_click {
             bindings = <&mkp RCLK>;
             key-positions = <19 20>;
