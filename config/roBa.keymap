@@ -35,9 +35,14 @@
             key-positions = <20 21>;
         };
 
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        Left_Click {
+            bindings = <&mkp LCLK>;
+            key-positions = <18 19>;
+        };
+
+        Right_Click {
+            bindings = <&mkp RCLK>;
+            key-positions = <19 20>;
         };
     };
 
