@@ -83,8 +83,8 @@
             bindings = <
 &kp Q             &kp W         &kp E    &kp R                    &kp T                                              &kp Y      &kp U  &lt 5 I    &kp O    &kp P
 &kp A             &kp S         &kp D    &kp F                    &kp G        &kp LS(LG(S))      &kp MINUS          &kp H      &kp J  &kp K      &kp L    &kp JP_COLON
-&mt LEFT_SHIFT Z  &kp X         &kp C    &kp V                    &kp B        &lt 1 JP_COLON     &lt 3 JP_SEMI      &kp N      &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT JP_DQT
-&kp LEFT_COMMAND  &kp LEFT_ALT  &kp TAB  &mt LEFT_CONTROL ESCAPE  &lt 2 SPACE  &kp LANG2          &kp RIGHT_COMMAND  &kp LANG1                             &kp JP_SQT
+&mt LEFT_SHIFT Z  &kp X         &kp C    &kp V                    &kp B        &lt 1 JP_COLON     &lt 3 JP_SEMI      &kp N      &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT JP_SLASH
+&kp LEFT_COMMAND  &kp LEFT_ALT  &kp TAB  &mt LEFT_CONTROL ESCAPE  &lt 2 SPACE  &kp LANG2          &kp LEFT_SHIFT     &kp LANG1                             &kp JP_BSLH
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -101,8 +101,8 @@
 
         NUM {
             bindings = <
-&kp JP_MINUS                   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp JP_PLUS                                               &kp JP_CARET  &kp JP_AMPS  &kp JP_TILDE &kp JP_LPAR  &kp JP_RPAR
-&kp JP_SLASH                   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp JP_ASTRK  &kp LC(LA(KP_NUMBER_0))      &kp JP_UNDER   &kp JP_EXCL   &kp JP_AT    &kp JP_HASH  &kp JP_DLLR  &kp JP_PRCNT
+&kp JP_DQT                   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp JP_PLUS                                               &kp JP_CARET  &kp JP_AMPS  &kp JP_TILDE &kp JP_LPAR  &kp JP_RPAR
+&kp JP_SQT                   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp JP_ASTRK  &kp LC(LA(KP_NUMBER_0))      &kp JP_UNDER   &kp JP_EXCL   &kp JP_AT    &kp JP_HASH  &kp JP_DLLR  &kp JP_PRCNT
 &mt LEFT_SHIFT KP_NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp JP_EQUAL                 &kp GRAVE      &kp JP_LBKT   &kp JP_RBKT  &kp JP_LBRC  &kp JP_RBRC  &kp JP_BSLH
 &trans                      &trans           &trans           &trans           &trans        &trans                 &trans         &trans                                               &kp JP_PIPE
             >;
