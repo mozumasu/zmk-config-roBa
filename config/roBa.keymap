@@ -84,7 +84,7 @@
 &kp Q             &kp W         &kp E    &kp R                    &kp T                                              &kp Y      &kp U  &lt 5 I    &kp O    &kp P
 &kp A             &kp S         &kp D    &kp F                    &kp G        &kp LS(LG(S))      &kp MINUS          &kp H      &kp J  &kp K      &kp L    &kp JP_COLON
 &mt LEFT_SHIFT Z  &kp X         &kp C    &kp V                    &kp B        &lt 1 JP_COLON     &lt 3 JP_SEMI      &kp N      &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT JP_SLASH
-&kp LEFT_COMMAND  &kp LEFT_ALT  &kp TAB  &mt LEFT_CONTROL ESCAPE  &lt 2 SPACE  &kp LANG2          &kp LEFT_SHIFT     &kp LANG1                             &kp JP_BSLH
+&kp LEFT_COMMAND  &kp LEFT_ALT  &kp TAB  &mt LEFT_CONTROL ESCAPE  &lt 2 SPACE  &kp LANG2          &kp LEFT_SHIFT     &kp LANG1                             &kp JP_YEN
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
