@@ -59,6 +59,17 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        bspc_no_ctrl: bspc_no_ctrl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_release &kp LCTRL &kp RCTRL>
+                , <&macro_tap &kp BACKSPACE>
+                , <&macro_press &kp LCTRL &kp RCTRL>;
+        };
     };
 
     behaviors {
@@ -91,7 +102,7 @@
         ctrl_h_bspc: ctrl_h_bspc {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp H>, <&kp BACKSPACE>;
+            bindings = <&kp H>, <&bspc_no_ctrl>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
     };
