@@ -68,7 +68,7 @@
             bindings
                 = <&macro_release &kp LCTRL &kp RCTRL>
                 , <&macro_tap &kp BACKSPACE>
-                , <&macro_press &kp LCTRL &kp RCTRL>;
+                , <&macro_press &kp LCTRL>;
         };
 
         held_kp: held_kp {
