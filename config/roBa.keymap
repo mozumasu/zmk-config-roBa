@@ -60,14 +60,6 @@
             label = "TO_LAYER_0";
         };
 
-        held_kp: held_kp {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            wait-ms = <0>;
-            tap-ms = <40>;
-            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-        };
-
     };
 
     behaviors {
@@ -163,14 +155,6 @@
             keep-mods = <(MOD_LGUI|MOD_RGUI)>;
         };
 
-        mt_tp: mt_tp {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            bindings = <&kp>, <&held_kp>;
-        };
     };
 
     keymap {
@@ -181,7 +165,7 @@
 &kp Q             &kp W         &kp E    &kp R                    &kp T                                                    &kp Y      &kp U    &lt 5 I  &kp O    &cmd_ctrl_p
 &kp A             &kp S         &kp D    &ctrl_f_right            &kp G        &lt 1 LS(LG(S))       &kp SQT                &ctrl_h_bspc  &ctrl_j_kana  &kp K    &kp L    &lt 3 SEMI
 &mt LEFT_SHIFT Z  &kp X         &kp C    &kp V                    &ctrl_b_left &lt 4 GRAVE           &kp PLUS               &cmd_ctrl_n  &ctrl_m_ret  &kp COMMA  &kp DOT  &lt 6 SLASH
-&kp LEFT_COMMAND  &kp LEFT_ALT  &kp TAB  &mt_tp LEFT_CONTROL ESCAPE  &lt 2 SPACE  &lt 3 LANG2    &kp MINUS              &kp LEFT_SHIFT                                &kp BACKSLASH
+&kp LEFT_COMMAND  &kp LEFT_ALT  &kp TAB  &mt LEFT_CONTROL ESCAPE  &lt 2 SPACE  &lt 3 LANG2    &kp MINUS              &kp LEFT_SHIFT                                &kp BACKSLASH
             >;
 
             sensor-bindings =
