@@ -25,3 +25,7 @@ include:
    shield: roBa_L
  - board: seeeduino_xiao_ble
    shield: settings_reset
+ - board: seeeduino_xiao_ble
+   shield: roBa_L
+   cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
+   artifact-name: roBa_L_with_logging
