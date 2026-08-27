@@ -27,5 +27,5 @@ include:
    shield: settings_reset
  - board: seeeduino_xiao_ble
    shield: roBa_L
-   cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
+   snippet: zmk-usb-logging
    artifact-name: roBa_L_with_logging
